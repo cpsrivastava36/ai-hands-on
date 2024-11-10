@@ -14,7 +14,7 @@ public class LangChainConfig {
     public EmbeddingModel embeddingModel() {
         // Configure the OpenAI Embedding Model
         return OpenAiEmbeddingModel.builder()
-                .apiKey("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")
+                .apiKey("{0}")
                 .modelName("text-embedding-ada-002")
                 .build();
     }
@@ -22,7 +22,7 @@ public class LangChainConfig {
     @Bean
     public OpenAiLanguageModel openAiLanguageModel() {
         return OpenAiLanguageModel.builder()
-                .apiKey("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")
+                .apiKey("{0}")
                 .modelName("gpt-4")
                 .temperature(0.4)
                 .build();
