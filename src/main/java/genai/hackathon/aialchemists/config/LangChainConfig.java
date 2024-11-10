@@ -14,7 +14,7 @@ public class LangChainConfig {
     public EmbeddingModel embeddingModel() {
         // Configure the OpenAI Embedding Model
         return OpenAiEmbeddingModel.builder()
-                .apiKey("{0}")
+                //.apiKey("{0}")
                 .modelName("text-embedding-ada-002")
                 .build();
     }
@@ -22,7 +22,7 @@ public class LangChainConfig {
     @Bean
     public OpenAiLanguageModel openAiLanguageModel() {
         return OpenAiLanguageModel.builder()
-                .apiKey("{0}")
+                //.apiKey("{0}")
                 .modelName("gpt-4")
                 .temperature(0.4)
                 .build();
